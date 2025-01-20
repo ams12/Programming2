@@ -1,0 +1,2 @@
+1|Mikkosen auto|Kaaratie 342|sales@mikkosenauto.com|0441457845|40520|Jyväskylä
+2|Mikkosen auto|Kaaratie 342|sales@mikkosenauto.com|0441457845|40520|Jyväskylä

@@ -1,0 +1,9 @@
+1|Apinakaara|Kaaratie 344|sales@apinakaara|0441457845|40447|Kinkeli
+2|Mikkosen auto|Kaaratie 342|sales@mikkosenauto.com|0441457845|40520|Jyväskylä
+3|Luukkosen kärry|Kaaratie 342|sales@mikkosenauto.com|0441457845|40520|Luukkosen kärry
+4|Mikkosen auto|Kaaratie 342|sales@mikkosenauto.com|0441457845|40520|Jyväskylä
+5|Mikkosen auto|Kaaratie 342|sales@mikkosenauto.com|0441457845|40520|Jyväskylä
+6|Mikkosen auto|Kaaratie 342|sales@mikkosenauto.com|0441457845|40520|Jyväskylä
+7|Virtasen biili|peiin 345|asd@gmail.com|044514770|40300|Kiesitie 35
+8|Luukkosen kiesi|Kärrytie 34|||40700|Jyväskylä
+10|Kikkarakaara-OY|Luukkitie 35|asq@gmail.com|0441457788|40700|Jyväskylä

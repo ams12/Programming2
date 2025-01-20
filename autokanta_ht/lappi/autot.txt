@@ -1,0 +1,8 @@
+1|mercedes-Bnez|c220|2017|125000|XYS-567|1999|Diesel|25000|toimiva peli|2
+3|mercedes-Bnez|c220|2017|125000|XYS-567|1999|Diesel|25000|toimiva peli|1
+4|mercedes-Bnez|c220|2017|125000|XYS-567|1999|Diesel|25000|toimiva peli|3
+5|mercedes-Bnez|c220|2017|125000|XYS-567|1999|Diesel|25000|toimiva peli|2
+6|mercedes-Bnez|c220|2017|125000|XYS-567|1999|Diesel|25000|toimiva peli|2
+7|mercedes-Bnez|c220|2017|125000|XYS-567|1999|Diesel|25000|toimiva peli|2
+8|mercedes-Bnez|c220|2017|125000|XYS-567|1999|Diesel|25000|toimiva peli|10
+9|BMW|330|2017|125000|XYS-567|1999|Diesel|25000|toimiva peli|10

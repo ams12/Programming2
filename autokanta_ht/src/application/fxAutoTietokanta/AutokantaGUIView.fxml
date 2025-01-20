@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import fi.jyu.mit.fxgui.ComboBoxChooser?>
+<?import fi.jyu.mit.fxgui.ListChooser?>
+<?import fi.jyu.mit.fxgui.StringGrid?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxAutoTietokanta.AutokantaController">
+   <left>
+      <SplitPane dividerPositions="0.5, 0.5" orientation="VERTICAL" BorderPane.alignment="CENTER">
+         <items>
+           
+            
+             <ListChooser fx:id="chooserLiike" maxHeight="1.7976931348623157E308" prefHeight="100.0" rivit="Audi A3&#10;BMW 530" BorderPane.alignment="CENTER" />  
+            <TextField fx:id="hakulause" onKeyReleased="#handleHaku" />
+            <ComboBoxChooser fx:id="cbHakuehto" rivit="Nimi&#10;Osoite&#10;Kaupunki" />
+         </items>
+      </SplitPane>
+   </left>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="tiedosto" mnemonicParsing="false" text="Tiedosto">
+            <items>
+                  <MenuItem fx:id="AvaaBTN" mnemonicParsing="false" onAction="#handleAvaa" text="Avaa" />
+              <MenuItem fx:id="suljeohjelma" mnemonicParsing="false" onAction="#suljeOhjelma" text="Sulje ohjelma.." />
+            </items>
+          </Menu>
+          <Menu fx:id="muokkaa" mnemonicParsing="false" text="Muokkaa">
+            <items>
+                  <MenuItem fx:id="lisaaLiike" mnemonicParsing="false" onAction="#handleLisaaLiike" text="Lisää liike" />
+                  <MenuItem fx:id="muokkaaliike" mnemonicParsing="false" onAction="#handleMuokkaaLiiketta" text="Muokkaa liikettä" />
+                  <MenuItem fx:id="lisaaAutoMenu" mnemonicParsing="false" onAction="#uusiAuto" text="Lisää auto" />
+              <MenuItem fx:id="muokkaaAutoaMenu" mnemonicParsing="false" onAction="#handleMuokkaa" text="Muokkaa autoa" />
+                  <MenuItem fx:id="poistaAutoMenu" mnemonicParsing="false" onAction="#handlePoistaAuto" text="Poista auto..." />
+            </items>
+          </Menu>
+          <Menu fx:id="apua" mnemonicParsing="false" text="Apua">
+            <items>
+              <MenuItem fx:id="tietojamenu" mnemonicParsing="false" onAction="#handleAvustus" text="Tietoja" />
+                  <MenuItem fx:id="jekku" mnemonicParsing="false" text="Jekku" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="uusiauto" mnemonicParsing="false" onAction="#uusiAuto" text="Uusi auto">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnUusiLiike" mnemonicParsing="false" onAction="#UusiLiike" text="Uusi liike">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button id="tallenna" fx:id="tallenna" mnemonicParsing="false" onAction="#handleTallenna" text="Tallenna">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="10.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnPoistaAuto" mnemonicParsing="false" onAction="#handlePoistaAuto" text="Poista auto">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnPoistaLiike" mnemonicParsing="false" onAction="#handlePoistaLiike" text="Poista liike">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="txtAutoHakuEhto" onAction="#handleAutohaku" onKeyReleased="#handleAutohaku">
+                     <HBox.margin>
+                        <Insets bottom="50.0" left="100.0" right="50.0" top="50.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <ComboBoxChooser fx:id="cbAutoHaku" rivit="Merkki&#10;Malli&#10;">
+                     <HBox.margin>
+                        <Insets bottom="50.0" right="50.0" top="50.0" />
+                     </HBox.margin>
+                  </ComboBoxChooser>
+               </children>
+            </HBox>
+            <StringGrid fx:id="tableAutot" rivit="Merkki | Malli | Vuosimalli  | Mittarilukema | Rekisterinumero | Moottorin koko | Kayttovoima | Hinta | Kuvaus &#10;&#10;" />
+            
+              
+                
+               
+             
+            <GridPane>
+            
+            
+            	 
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Merkki" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Text layoutX="10.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Malli" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vuosimalli" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mittarilukema" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rekisterinumero" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Moottorin koko" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Käyttövoima" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hinta" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+                  <TextField fx:id="merkki" GridPane.columnIndex="1" />
+                  <TextField fx:id="malli" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="vuosimalli" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="mittarilukema" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="rekisterinumero" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="moottorikoko" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="kayttovoima" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField fx:id="hinta" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kuvaus" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
+                  <TextField fx:id="kuvaus" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Liikkeen nimi" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Puhelinnumero" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sähköpostiosoite" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Osoite" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Postinumero" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kaupunki" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                  <TextField fx:id="txtLiikeNimi" GridPane.columnIndex="3" />
+                  <TextField fx:id="txtLiikePuhnro" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtliikeSposti" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtLiikeosoite" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <TextField fx:id="txtLiiikepostinro" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <TextField fx:id="txtLiikekaupunki" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </center>
+   <right>
+       
+   </right>
+</BorderPane>

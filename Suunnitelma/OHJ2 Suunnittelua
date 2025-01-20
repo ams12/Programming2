@@ -1,0 +1,9 @@
+OHJ2 Suunnittelua
+
+Ensin käyttäjä voi kirjautua sisään, tai jatkaa vierailijana. 
+Tämän jälkeen tulee 3 osaan jaettu näyttö. Vasemmalla on autohaku, jossa voi hakea autoa merkin,mallin tms perusteella. Mikäli rajauksia ei tehdä, keskellä näkyy kaikki tällähetkellä myynnissä olevat autot. Autoista näkyy merkki ja malli, ja autoa klikatessa saadaan auton kaikki tiedot näkyviin. Tässä ikkunassa on myös muokkaa-nappi. Kun auto on valittuna muttei klikattuna, näkyy oikealla puolella liikkeen tiedot
+
+
+Vasemman yläreunan palkin kautta voidaan lisätä uusi auto. Lisätään uusi auto, ja sen jälkeen lisätään joko liike jossa se on. 
+
+m

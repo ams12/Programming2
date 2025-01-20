@@ -1,0 +1,5 @@
+1|Makkosen auto|Kaaratie 342|sales@mikkosenauto.com|0441457845|40520|Makkosen auto
+2|Mikkosen auto|Kaaratie 342|sales@mikkosenauto.com|0441457845|40520|Jyväskylä
+3|Luukkosen auto|Kiesitie 34|aws@gmail.com|0404478878|40700|Ivalo
+4|Testiliike||||0|
+5|Kekkosen Kärry|Kekkostie 345|kekkoskarry@gmail.com|0441501147|32500|Kokkola

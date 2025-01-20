@@ -1,0 +1,59 @@
+OHJ2 rekisteriohjelma
+ 
+Rakennetaan ohjelma, jolla voidaan selata myynnissä olevia autoja eri liikkeistä. 
+
+LÄHIN LIIKE POSTINUMEROITA VERTAAMALLA????
+
+![](https://gitlab.jyu.fi/aaelmust/ohj-2-s-2/-/raw/master/kuvat/paaikkunak.png)
+
+ Päätaulu 
+Autoliikkeet\liikkeet.dat
+Autoliikkeet ;
+Kenttien järjestys tiedostossa seuraaba:
+;|Liikkeen ID |Liikkeen nimi | Osoite | sähköposti | Puhelinnumero | Postinumero | 
+1	| Makkosen auto | Rämätie 24 | Makkosenkiesi@gmail.com | 0441234567 | 40570 | 
+2	| Mikkosen Rämä | Romutie 2971 | mrama@gmail.com | 0441234567 | 90500 |
+3	| NCars| Kärrypolku 517 | sales@mcars.com  | 0441234567 | 00570 | 
+4	| Budgetcar | Tervapolku 2 | customermanagement@budgetcar.com |  0441234567 |  85120 | 
+
+postinumero | Kaupunki |
+40100 | Jyväskylä |
+00100 | Helsinki |
+90400 | Oulu |
+
+
+
+
+autot.dat
+
+id | Merkki | Malli | Vuosimalli | Mittarilukema | Rekisterinumero | Moottorin koko | Käyttövoima | Hinta | Tuotekuvaus | Sijainti_id
+1	| Toyota | Corolla | 1995 | 100 000 | VHR-463 | 1999 cm3 | Bensiini | 1500 | | 1
+2	| Toyota | Hiace | 1995 | 1 000 000 | XCG-972 | 1999 cm3 | Bensiini | 2200 | | 5
+3	| Volvo | V70 | 2015 | 275 000 | QVE-691 | 2499 cm3 | Diesel | 15 800 | "Ei käynnisty" | 5
+4	| Mercedes-Benz | C220 | 2019 | 45 000 |EGH-347 | 1999 cm3 | Hybrid | 32 250 | "AMG-sisävarustepaketti" | 18
+5	| Renault | Zoe | 2022 | Ajamaton | NDA-353 | 0 cm3 | Sähkö | 18 900 | "Ajamaton kauppakassi heti toimitukseen" | 15 |
+
+
+
+ 1 Makkosen auto  Rämätie 24  Makkosenkiesi@gmail.com  0441234567  40570  
+
+
+5	| Renault | Zoe | 2022 | Ajamaton | NDA-353 | 0 cm3 | Sähkö | 18 900 | "Ajamaton kauppakassi heti toimitukseen" | 15 |
+
+
+1	| Toyota | Corolla | 1995 | 100 000 | VHR-463 | 1999 cm3 | Bensiini | 1500 | | 1
+2	| Toyota | Hiace | 1995 | 1 000 000 | XCG-972 | 1999 cm3 | Bensiini | 2200 | | 5
+3  Volvo  V70  2015  275 000  QVE-691  2499 cm3  Diesel  15 800  "Ei käynnisty"  5
+4	  Mercedes-Benz  C220  2019  45 000 EGH-347  1999 cm3  Hybrid  32 250  "AMG-sisävarustepaketti"  18
+5	| Renault | Zoe | 2022 | Ajamaton | NDA-353 | 0 cm3 | Sähkö | 18 900 | "Ajamaton kauppakassi heti toimitukseen" | 15 |
+
+
+2	 Mikkosen Rämä  Romutie 2971  mrama@gmail.com  0441234567  90500 
+3	 NCars  Kärrypolku 517  sales@mcars.com   0441234567  00570  
+4	 Budgetcar  Tervapolku 2  customermanagement@budgetcar.com   0441234567   85120  
+
+
+Liikkeen ID,   Liikkeen nimi ,  Osoite ,  sähköposti,   Puhelinnumero , Postinumero  
+
+
+id  Merkki  Malli  Vuosimalli  Mittarilukema  Rekisterinumero  Moottorin koko  Käyttövoima  Hinta  Tuotekuvaus  Sijainti_id 

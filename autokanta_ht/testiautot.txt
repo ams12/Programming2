@@ -1,0 +1,4 @@
+0|mercedes-Bnez|c220|2017|125000|XYS-567|1999|Diesel|25000|toimiva peli|1
+0|mercedes-Bnez|c220|2017|125000|XYS-567|1999|Diesel|25000|toimiva peli|2
+0|mercedes-Bnez|c220|2017|125000|XYS-567|1999|Diesel|25000|toimiva peli|2
+0|mercedes-Bnez|c220|2017|125000|XYS-567|1999|Diesel|25000|toimiva peli|2

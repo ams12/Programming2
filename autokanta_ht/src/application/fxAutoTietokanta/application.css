@@ -1,0 +1,10 @@
+.virhe{
+	-fx-background-color:red;
+}
+
+.normaali{
+	-fx-background-color:white;
+}
+.bileet{
+	-fx-background-color:red;
+}
